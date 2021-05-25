@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#main table {
+    border-collapse: collapse;
+}
+#main table tr>td {
+    border: solid 1px black;
+}
+
+#main table {
+    margin: 0 auto;
+}
+
+#main table tr>td>img {
+    width: 160px
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {font-size: 17px; 
+    font-family: '맑은 고딕', 'Times New Roman', Courier;
+}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
+h1 {font-size: 30px;
+    font-family: 궁서, '맑은 고딕', 'Times New Roman';
+    letter-spacing: 15px;
+}
+.italic {font-style:italic;}
+.bold {font-weight:bold;}
+.blue {color: #0000ff}
+.red {color: #ff0000}
+.bgc {background-color: #D9D9D9}
+.underline {text-decoration: underline}
+.green {color: #00ff00}
+.bgc p {text-indent: 30px;}
+/* table starts */
+ul>li {list-style-type: square}
+ol>li {list-style-type: none}
+#ol1:before {content: "1. ";}
+#ol2:before {content: "2. ";}
+#ol3:before {content: "3. ";}
+#ol4:before {content: "4. ";}
+tbody>tr:hover {background-color: #EDD3ED}
+thead {background-color: #C8EBFA}
+.speed {text-align: right;}
+.speed:before {content: "약 ";}
+.speed:after {content: " (MB/초)";}
+.country:link {color:#000000; text-decoration:none}
+.country:visited {color:#000000; text-decoration:none}
+.country:hover {color:#0000FF; text-decoration:underline}
+.country:active {color:#0000FF; text-decoration:underline}

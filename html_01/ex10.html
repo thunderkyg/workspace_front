@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <title>게시판</title>
+        <link rel="stylesheet" href="./css/board.css">
+    </head>
+
+    <body>
+       
+        <div id="board">
+            <form action="board" method="get">
+                <!-- 게시판선택 -->
+                <div class="form-group">
+                    <label class="form-text" for="sel-board">게시판선택</label>
+                    <select class="txt-padding" id="sel-board" name="boardtype">
+                        <option value="" selected="selected">선택해주세요</option>
+                        <option value="notice">공지사항</option>
+                        <option value="greetings">가입인사</option>
+                        <option value="humor">유머게시판</option>
+                        <option value="job">취업게시판</option>
+                        <option value="etc">기타게시판</option>
+                    </select>
+                </div>
+                <!-- //게시판선택 -->
+
+                <!-- 제목 -->
+                <div class="form-group">
+                    <label class="form-text" for="form-title">제목</label>
+                    <input class="txt-padding" name="title" id="form-title" type="text" value="" placeholder="제목을 입력해주세요">
+                </div>
+                <!-- 제목 -->
+
+                <!-- 비밀번호 -->
+                <div class="form-group">
+                    <label class="form-text" for="form-pw">비밀번호</label>
+                    <input class="txt-padding" id="form-pw" type="password" name="pw" value="" placeholder="패스워드를 입력해주세요">
+                </div>
+                <!-- //비밀번호 -->
+
+                <!-- 공개범위 라디오 -->
+                <div class="form-group">
+                    <span class="form-text">공개범위</span>
+                    <label>본인</label>
+                    <input id="" type="radio" value="personal" name="privacybounds">
+
+                    <label>로그인회원</label>
+                    <input type="radio" value="members" name="privacybounds">
+
+                    <label>친구</label>
+                    <input type="radio" value="friends" name="privacybounds">
+                    
+                    <label>전체</label>
+                    <input type="radio" value="all" name="privacybounds">
+                </div>
+                <!-- //공개범위 라디오 -->
+
+                <!-- 허용범위 채크박스 -->
+                <div class="form-group">
+                    <span class="form-text">허용범위</span>
+                    <label>댓글허용</label>
+                    <input name="available" value="comments" type="checkbox">
+
+                    <label>답글허용</label>
+                    <input name="available" value="re-comments" type="checkbox">
+
+                    <label>좋아요허용</label>
+                    <input name="available" value="likes" type="checkbox">
+                </div>
+                <!-- 허용범위 채크박스 -->
+
+                <!-- 임시 주소찾기 -->
+                <div class="form-group">
+                    <button type="button">주소찾기</button>
+                </div>
+
+
+                <!-- 택스트 아레아 -->
+                <div class="form-group">
+                    <textarea class="txt-padding" name="content" value="" id="txt-content"></textarea>
+                </div>
+                <!-- //택스트 아레아 -->
+
+                <!-- 파일 -->
+                <div class="form-group">
+                    <label class="form-text" for="input-file">첨부파일</label>
+                    <input name="input-file" value="" id="input-file" type="file">
+                </div>
+                <!-- //파일 -->
+
+                <!-- 버튼 -->
+                <div class="form-button">
+                    <button type="submit">등록</button>
+                    <button type="reset">초기화</button>
+                </div>
+                <!-- //버튼 -->
+            </form>
+        </div>
+    </body>
+
+
+
+</html>

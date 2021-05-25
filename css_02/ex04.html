@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            table {
+                text-align: center;
+                border-collapse: collapse;
+                border: 1px solid #000000;
+            }
+            .left-a {
+                text-align: left;
+            }
+        table>thead>tr>th {
+            background-color: lightgrey;
+        }
+        table>tbody>tr:hover {
+            background-color: yellow;
+        }
+            /* .div-b {
+                border: 1px solid;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <div class="div-b">
+            <h1>mysite</h1>
+            <h2>게시판</h2>
+            <h3>일반게시판</h3>
+            <h4>리스트</h4>
+            <table border="1">
+                <colgroup>
+                    <col style="width: 50px;">
+                    <col style="width: 450px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 50px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>조회수</th>
+                        <th>작성일</th>
+                        <th>관리</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+
+</html>

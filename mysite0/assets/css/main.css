@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+#full-content {
+    padding: 15px 10px 15px 10px;
+}
+
+/* Contents */
+    /* Main */
+    #full-content #profileimg {
+        margin: 0px 20px 0px 0px;
+        width: 300px;
+        float: left;
+    }
+    
+    #full-content #greetings #greet {
+        margin: 0px 0px 40px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #full-content #greetings #desc {
+        font-size: 15px;
+    }
+    

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            table {
+                text-align: center;
+                border-collapse: collapse;
+            }
+            .left-a {
+                text-align: left;
+            }
+            table>thead>tr>th {
+                background-color: lightgrey;
+                border-top: 1px solid darkslategrey;
+                border-bottom: 1px solid darkslategrey;
+            }
+            .btmline{
+                border-bottom: 1px solid darkslategrey;
+            }
+            table>tbody>tr:hover {
+                background-color: yellow;
+            }
+            tbody>tr>td {
+                border-bottom: 1px dotted darkslategrey;
+            }
+            .btn-write{
+                width: 80px;
+                background-color: lightgrey;
+                border: 1px solid black;
+                border-radius: 8px;
+                text-align: center;
+                margin-top: 5px;
+                margin-left: 765px;
+            }
+            .btn-write:before {content: "📝"}
+            .btn-write:hover {
+                background-color: grey;
+                cursor: pointer;
+            }
+            .a-write:visited {
+                color: black;
+                text-decoration: none;
+            }
+            .a-write {
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div-b">
+            <h1>mysite</h1>
+            <h2>게시판</h2>
+            <h3>일반게시판</h3>
+            <h4>리스트</h4>
+            <table>
+                <colgroup>
+                    <col style="width: 50px;">
+                    <col style="width: 450px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 50px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>조회수</th>
+                        <th>작성일</th>
+                        <th>관리</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr class="btmline">
+                        <td>123</td>
+                        <td class="left-a"><a href="">게시판 게시글입니다.</a></td>
+                        <td>정우성</td>
+                        <td>1232</td>
+                        <td>dddddd</td>
+                        <td>삭제</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="btn-write">
+                    <a class="a-write"href="">글쓰기</a>
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>

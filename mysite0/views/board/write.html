@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Practice</title>
+        <link rel="stylesheet" href="../../assets/css/signup.css">
+        <link rel="stylesheet" href="../../assets/css/common.css">
+    </head>
+    <body>
+        <body>
+            <div id="wrap">
+    
+                <!-- Header -->
+                <div id="header" class="clearfix">
+                    <!-- SiteLogo -->
+                <h1><a href="../main/main.html">MySite</a></h1>
+    
+                    <ul class="clearfix">
+                        <li><a href="../user/login.html">로그인</a></li>
+                        <li><a href="../user/signup.html">회원가입</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Navigation-->
+                <div id="navigator" class="clearfix">
+                    <ul>
+                        <li><a href="../info/resume.html">입사지원서</a></li>
+                        <li><a href="../board/list.html">게시판</a></li>
+                        <li><a href="../gallery/picture.html">갤러리</a></li>
+                        <li class="norightborder"><a href="../main/main.html">방명록</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contents -->
+                <div id="content" class="clearfix">
+
+                    <!-- Board Menu -->
+                    <div id="aside">
+                        <h2>게시판</h2>
+                        <ul>
+                            <a href="../board/list.html"><li>일반 게시판</li></a>
+                            <a href="../board/commentlist.html"><li>댓글 게시판</li></a>
+                            <a href="../board/attachlist.html"><li>첨부 게시판</li></a>
+                        </ul>
+                    </div>
+
+                    <!-- Main -->
+                    <div id="main" class="clearfix">
+
+                        <!-- Main-head-->
+                        <div id="main-head" class="clearfix">
+                            <h3>글쓰기</h3>
+                        </div>
+
+                        <!-- SignupForm -->
+                        <div class="form-totalwidth">
+                            <form action="" method="get">
+                                <div class="form-height">
+                                    <label class="form-heading" for="uid">이름</label>
+                                    <input id="uid" type="text" name ="uid"placeholder="이름을 입력하세요.">
+                                </div>
+                                
+                                <div class="form-height">
+                                    <label class="form-heading" >게시판 선택</label>
+                                    <select name="boardtype">
+                                        <option value="SKT" value="sk">선택</option>
+                                        <option value="SKT" value="kt">일반</option>
+                                        <option value="SKT" value="lg">댓글</option>
+                                        <option value="SKT" value="etc">첨부</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-height">
+                                    <label class="form-heading valignlt">내용</label>
+                                    <textarea class="txtarea-size" placeholder="5줄 이상 작성해주세요."></textarea><br>
+                                </div>
+                                
+                                <div class="form-height">
+                                    <label class="form-heading valignlt">파일 첨부</label>
+                                    <input type="file">
+                                </div>
+                                
+
+                                <div class="btn-center">
+                                    <button class="btn" type="submit">등록</button>
+                                    <button class="btn" type="reset">초기화</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div id="footer">
+                    <p>Copyright &#169; 2021 Thomas Kim. All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            .div-round{
+                width: 200px;
+                height: 100px;
+                background-color: #ff0000;
+                border: 1px solid black;
+                border-radius: 10px
+            }
+
+            .div-partial{
+                width: 300px;
+                height: 300px;
+                background-color: #f0f;
+                border: 1px solid black;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 30px;
+                border-top-left-radius: 40px;
+                text-align: center;
+            }
+
+            .div-all{
+                width: 300px;
+                height: 300px;
+                background-color: #00ffff;
+                border: 1px solid black;
+                border-radius: 10px 20px 30px 40px;
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="div-round">
+            라운드 한번에 적용
+        </div><br>
+
+        <div class="div-partial">
+            top-right: 10px <br>
+            bottom-right: 20px<br>
+            bottom-left: 30px<br>
+            top-left: 40px
+        </div>
+
+        <div class="div-all">
+            top-right: 10px <br>
+            bottom-right: 20px<br>
+            bottom-left: 30px<br>
+            top-left: 40px
+        </div>
+        
+
+    </body>
+
+</html>

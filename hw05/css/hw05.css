@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 12px;
+    font-family: "맑은 고딕", "돋음";
+    list-style-type: none;
+}
+
+a:link{text-decoration: none; color: black;}
+a:visited{text-decoration: none; color: black;}
+a:active{text-decoration: none; color: black;}
+a:hover{text-decoration: none; color: black;}
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* Layout */
+
+#wrap {
+    width: 1000px;
+    margin: auto;
+}
+
+#header {
+    border-bottom: 1px solid grey;
+}
+#navigation {
+    border-bottom: 1px solid grey;
+}
+#content {
+    padding: 20px 10px 20px 10px;
+}
+#footer {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Heading */
+
+#header {
+    padding: 5px 5px 5px 5px;
+}
+ #header>h1>a {
+    font-size: 35px;
+    color: lightgreen;
+    float: left;
+}
+
+#header>ul {
+    float: right;
+}
+
+#header>ul>li {
+    float: left;
+    margin: 15px 1px 5px 10px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 4px 4px 4px 4px;
+}
+
+/* Navigation */
+
+#navigation ul>li {
+    width: 249px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    border-right: 1px solid black;
+    float: left;
+}
+
+#navigation ul>li.noright {
+    border-right: none;
+}
+
+/* Content */
+
+#content>img {
+    float: left;
+    margin-right: 20px;
+    height: 300px;
+}
+
+#content p {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.lineheight {
+    display: table;
+    height: 300px;
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+#board {
+    margin: 40px 0px 15px 0px;
+}
+
+#board form{
+    float: right;
+}
+
+/* Input */
+#content #main #main-body #board form input[type="text"]{
+    width: 150px;
+    height: 25px;
+}
+
+#content #main #main-body form button {
+    padding: 3px 5px 3px 5px;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#main-table table thead tr{
+    background-color: #d6d6d6;
+}
+
+#main-table table thead tr th{
+    border-top: solid 1px #999999;
+    border-bottom: dotted 1px #999999;
+}
+
+#main-table table tbody tr td{
+    border-bottom: dotted 1px #999999;
+}
+
+#main-table table th, #main-table table td {
+    padding: 10px 5px 10px 5px;
+}
+
+#main-table table .borderbtm {
+    border-bottom: solid 1px #999999;
+}
+
+/* BoardNumber */
+
+#main-body #pager {
+    text-align: center;
+}
+
+#main-body #pager ol {
+    width: 160px;
+    display: inline-block;
+    /* margin: 0 auto; */
+}
+
+#main-body #pager ol>li {
+    float: left;
+    margin: 0px 5px 0px 0px;;
+}
+
+#main-body #pager ol>li>a.active {
+    font-size: 15px;
+    font-weight: bold;;
+}
+
+#main-body #pager #btn-write {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    border-radius: 2px;
+}
